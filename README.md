@@ -7,8 +7,11 @@ n/m, the second thread (i.e. thread 1) computes the sum of the quadruple roots f
 Finally, your program uses pthread_join() to let the main thread know that all of the m computational threads have done the atomic additions and then it can print the final result. Below is an example of running your thread program:
 
 bachs> ./thr_atomic 2 65536
+
 thr 0: 352703.926537
+
 thr 1: 486164.553017
+
 sum of quadruple roots: 838868.479554
 
 The program thr_reduce.c is similar to thr-atomic.c except that you need to use the parallel reduction approach to 
